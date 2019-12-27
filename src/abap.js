@@ -7,7 +7,7 @@ Description: SAP ABAP language description
 module.exports = function(hljs) {
   return {
     case_insensitive: true,
-    aliases: ['sap-abap', 'abap'],
+    aliases: ['sap-abap', 'abap', 'ABAP'],
     keywords: {
 		keyword: 'ABBREVIATED ABS ABSTRACT ABSTRACTFINAL ACCEPT ACCEPTING ACCORDING ACOS ACTUAL ADD|0 ADD-CORRESPONDING ADDITIONS ADJACENT AFTER|0 '
 		    +'ALIASES ALL|0 ALLOCATE ANALYZER AND|0 APPEND APPENDING AS|0 ASCENDING DESCENDING ASIN ASSIGN ASSIGNING ATAN ATTRIBUTE AUTHORITY-CHECK '
