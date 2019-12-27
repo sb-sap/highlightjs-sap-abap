@@ -66,6 +66,7 @@ function hljsDefineAbap(hljs) {
 
 module.exports = function(hljs) {
   hljs.registerLanguage("abap", hljsDefineAbap);
+  hljs.registerLanguage("ABAP", hljsDefineAbap);
 };
 
 module.exports.definer = hljsDefineAbap;
