@@ -3,8 +3,9 @@ Language: ABAP
 Author: Cassio Binkowski <cassioiks@live.com>
 Description: SAP ABAP language description
 */
+var module = module ? module : {};
 
-module.exports = function(hljs) {
+function hljsDefineAbap(hljs) {
   return {
     case_insensitive: true,
     aliases: ['sap-abap', 'abap', 'ABAP'],
@@ -62,3 +63,10 @@ module.exports = function(hljs) {
     ]
   }
 }
+
+module.exports = function(hljs) {
+  hljs.registerLanguage("abap", hljsDefineAbap);
+};
+
+module.exports.definer = hljsDefineAbap;
+
